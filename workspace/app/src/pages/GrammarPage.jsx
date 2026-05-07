@@ -20,14 +20,12 @@ export default function GrammarPage({ user, onBack }) {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-100 via-purple-50 to-pink-100 relative overflow-hidden">
-      {/* 装饰性背景 */}
       <div className="absolute top-20 left-10 text-4xl opacity-20 animate-float">📖</div>
       <div className="absolute top-40 right-8 text-3xl opacity-20 animate-float" style={{ animationDelay: '0.5s' }}>📚</div>
       <div className="absolute bottom-32 left-16 text-3xl opacity-20 animate-float" style={{ animationDelay: '1s' }}>✨</div>
       
       <Header title="语法与音标" showBack onBack={onBack} />
       <main className="pt-20 pb-28 px-4 max-w-md mx-auto relative z-10">
-        {/* 标签页 */}
         <div className="flex gap-3 mb-6">
           <button
             onClick={() => setActiveTab('grammar')}
@@ -115,7 +113,6 @@ export default function GrammarPage({ user, onBack }) {
               </div>
             ))}
 
-            {/* 学习小贴士 */}
             <div className="bg-gradient-to-r from-purple-500 to-indigo-500 rounded-2xl p-6 text-white shadow-xl">
               <h3 className="font-black text-xl mb-3 flex items-center gap-2">
                 💡 学习小贴士
@@ -170,7 +167,6 @@ export default function GrammarPage({ user, onBack }) {
               ))}
             </div>
 
-            {/* 发音技巧 */}
             <div className="bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl p-6 text-white shadow-xl">
               <h3 className="font-black text-xl mb-3 flex items-center gap-2">
                 🎧 发音技巧
