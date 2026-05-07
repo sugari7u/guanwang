@@ -41,6 +41,7 @@ function App() {
             mode={learnMode} 
             addPoints={addPoints}
             addCompletedWord={addCompletedWord}
+            onBack={() => handleNavigate('home')}
           />
         );
       case 'review':
@@ -49,10 +50,11 @@ function App() {
             user={user} 
             addPoints={addPoints}
             addCompletedWord={addCompletedWord}
+            onBack={() => handleNavigate('home')}
           />
         );
       case 'grammar':
-        return <GrammarPage user={user} />;
+        return <GrammarPage user={user} onBack={() => handleNavigate('home')} />;
       case 'profile':
         return <ProfilePage user={user} onNavigate={handleNavigate} />;
       default:
